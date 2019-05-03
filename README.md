@@ -31,29 +31,25 @@ Code was tested with the following package versions (see requirements.txt)
     git clone https://github.com/MolProfileStrepNSTI/NSTI_src_code.git
 
 ### install dependencies
-# (A) pip 
+
+**pip**
 
     python -m pip install -r requirements.txt
 
-# (B) conda
+**conda**
 
     conda install --file requirements.txt
 
-
 # Instructions
-## Create source data for Figure 3
+## Create source data for Figure 3 (execution time <1min)
 
 - script to creates source data table and a GO ontology subgraph in gml file format in the results/figure3 folder
 
-### Create data for Figure 3 (execution time <1min)
-
     python ./figure3.py
 
-### Create source data for Figure 4
+### Create source data for Figure 4 (execution time ~2min)
 
 - script to creates source data table for Figure 4B in the results/figure4 folder
-
-### Create data for Figure 4 (execution time ~2min)
 
     python ./Figure4.py
 
@@ -64,14 +60,27 @@ Code was tested with the following package versions (see requirements.txt)
     as a jupyter notebook or in .html format or 
 
 
-### Create data and subfigures for Figure 7A + 7C-E (execution time ~25min)
+#### Create data and subfigures for Figure 7A + 7C-E (execution time ~25min)
 
     python ./Figure7_Classifier_train_test_val.py
 
-### Create image for Figure 7B (execution time <1min)
+***Results***
+- **Figure 7A**
+<img src="https://github.com/MolProfileStrepNSTI/NSTI_src_code/blob/master/pics/Fig7A_Model_comparison_ROC.svg?sanitize=true">
+
+- **Figure 7C**
+<img src="https://github.com/MolProfileStrepNSTI/NSTI_src_code/blob/master/pics/Fig7C_Feat_Comparison_ROC_RF.svg?sanitize=true">
+
+- **Figure 7D**
+<img src="https://github.com/MolProfileStrepNSTI/NSTI_src_code/blob/master/pics/Fig7D_FinalModel_ROC.svg?sanitize=true">
+
+#### Create image for Figure 7B (execution time <1min)
 
     Rscript --vanilla ./Figure7B_boruta.R
 
+***Results***
+- **Figure 7B**
+<img src="https://github.com/MolProfileStrepNSTI/NSTI_src_code/blob/master/pics/Fig7B_Boruta.png">
 
 # License
 This work is licensed under the MIT license
