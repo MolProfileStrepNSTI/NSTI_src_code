@@ -27,31 +27,36 @@ Code was tested with the following package versions (see requirements.txt)
 # Installation
 
 ### clone git repository to a local directory
-
+```
     git clone https://github.com/MolProfileStrepNSTI/NSTI_src_code.git
+```
 
 ### install dependencies (execution time <5min)
 
 **pip**
-
+```
     python -m pip install -r requirements.txt
+```
 
 **conda**
-
+```
     conda install --file requirements.txt
+```
 
 # Instructions
 ## Create source data for Figure 3 (execution time <1min)
 
 - script to creates source data table and a GO ontology subgraph in gml file format in the results/figure3 folder
-
+```
     python ./figure3.py
+```
 
 ### Create source data for Figure 4 (execution time ~2min)
 
 - script to creates source data table for Figure 4B in the results/figure4 folder
-
+```
     python ./Figure4.py
+```
 
 ### Create source data and subfigures for Figure 7
 
@@ -61,8 +66,9 @@ Code was tested with the following package versions (see requirements.txt)
 
 
 #### Create data and subfigures for Figure 7A + 7C-E (execution time ~25min)
-
+```
     python ./Figure7_Classifier_train_test_val.py
+```
 
 ***Results***
 - **Figure 7A**
@@ -75,8 +81,9 @@ Code was tested with the following package versions (see requirements.txt)
 <img src="https://github.com/MolProfileStrepNSTI/NSTI_src_code/blob/master/pics/Fig7D_FinalModel_ROC.svg?sanitize=true">
 
 #### Create image for Figure 7B (execution time <1min)
-
+```
     Rscript --vanilla ./Figure7B_boruta.R
+```
 
 ***Results***
 - **Figure 7B**
