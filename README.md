@@ -30,7 +30,7 @@ Code was tested with the following package versions (see requirements.txt)
 
     git clone https://github.com/MolProfileStrepNSTI/NSTI_src_code.git
 
-### install dependencies
+### install dependencies (execution time <5min)
 
 **pip**
 
