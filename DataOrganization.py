@@ -33,18 +33,18 @@ class DataOrganization:
 
 
     def import_databases(self, genus, species_filter=None):
-            """
-            Imports VFDB for genus with compatible locT
-            Imports VFcluster_db {VF_clusterid: {'members': [members], 'description': 'description'}}
-            Imports groupmember_db {gene_group: [group_members]}
-            :param genus <str>: Genus name
-            :param species_filter <str>: Species name for data cleaning
-            """
+        """
+        Imports VFDB for genus with compatible locT
+        Imports VFcluster_db {VF_clusterid: {'members': [members], 'description': 'description'}}
+        Imports groupmember_db {gene_group: [group_members]}
+        :param genus <str>: Genus name
+        :param species_filter <str>: Species name for data cleaning
+        """
 
-            self._import_VFDB(genus, species_filter=species_filter)
-            self._import_VFcluster_db()
-            self._import_groupmember_assignment(reverse=True)
-            self._import_tpm_db()
+        self._import_VFDB(genus, species_filter=species_filter)
+        self._import_VFcluster_db()
+        self._import_groupmember_assignment(reverse=True)
+        self._import_tpm_db()
 
 
     def _import_groupmember_assignment(self, reverse=False, return_db=False):
